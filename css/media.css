@@ -1,0 +1,27 @@
+@media screen and (max-width: 1230px) {
+  .header_block-wrap {
+    display: none;
+  }
+  .header-top_main {
+    padding-left: 29px;
+  }
+  .menu-list_item {
+    margin-right: 15px;
+  }
+  .menu-list_item__del {
+    display: none;
+  }
+  .header_order-wrap {
+    padding: 0 10px 0 0px;
+  }
+  .header_info-wrap {
+    padding: 2px 0 0 78px;
+    width: 260px;
+  }
+  .tab_item {
+    padding: 8px 9px;
+  }
+  .tab_link__sale {
+    padding: 8px 14px;
+  }
+}

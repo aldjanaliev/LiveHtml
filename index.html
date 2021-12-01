@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LiveHTML</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-top">
+				<div class="header-top_logo">
+					<a href="#" class="header_logo-img">
+						<img src="img/logo.jpg" alt="Logo" width="210px"	height="111px">
+					</a>
+					<span class="header_logo-txt">магазин инструмента</span>
+				</div>
+				<div class="header-top_main">
+					<div class="header-top_links">
+						<nav class="menu">
+							<ul class="menu-list">
+								<li class="menu-list_item"><a href="#">Каталог инструментов</a></li>
+								<li class="menu-list_item"><a href="#">Все для сада</a></li>
+								<li class="menu-list_item menu-list_item__del"><a href="#">Ручной инструмент</a></li>
+								<li class="menu-list_item"><a href="#">Электрика</a></li>
+								<li class="menu-list_item"><a href="#">Доставка</a></li>
+								<li class="menu-list_item"><a href="#">Оплата</a></li>
+								<li class="menu-list_item"><a href="#">О нас</a></li>
+							</ul>
+						</nav>
+						<div class="header-top_enter">
+							<div class="enter_btn-wrap login">
+								<button class="enter_btn" id="btn_login">Вход</button>
+							</div>
+							<div class="enter_btn-wrap sign-in">
+								<button class="enter_btn" id="btn_sign">Регистрация</button>
+							</div>
+						</div>
+					</div>
+					<div class="header-top_content">
+						<div class="header_block-wrap">
+							<div class="header_block"></div>
+						</div>
+						<div class="header_order-wrap">
+							<div class="header_order header_order__basket">
+								<i class="header_order-ic header_order-ic__basket"></i>
+								<a href="#" class="header_order-txt">
+									<span>3шт.</span>
+									<span> / </span>
+									<span>17 250 р.</span>
+								</a>
+							</div>
+							<div class="header_order header_order__favorit">
+								<i class="header_order-ic header_order-ic__favorit"></i>
+								<a href="#" class="header_order-txt">Избранное (<i>7</i>)</a>
+							</div>
+							<div class="header_order header_order__compare">
+								<i class="header_order-ic header_order-ic__compare"></i>
+								<a href="#" class="header_order-txt">К сравнению (<i>5</i>)</a>
+							</div>
+						</div>
+						<div class="header_cart-wrap">
+							<a href="#" class="header_cart"><img src="img/item-1.jpg" alt="товар"></a>
+							<a href="#" class="header_cart"><img src="img/item-2.jpg" alt="товар"></a>
+							<a href="#" class="header_cart"><img src="img/item-3.jpg" alt="товар"></a>
+						</div>
+						<div class="header_info-wrap">
+							<div class="header_info-time">
+								<span class="header_info-time-in header_info-time-in__txt">Время работы:</span>
+								<span class="header_info-time-in header_info-time-in__num">10.00 - 19.00</span>
+							</div>
+							<div class="header_info-phone">
+								<span class="header_phone">8 495 721-25-25</span>
+							</div>
+							<div class="header_info-city">
+								<span class="header_info-city-active" id="choosed-city">Москва</span>
+								<button class="choose-city_btn" id="change-city_btn">сменить</button>
+								<div class="header_info-city-wrap" id="change-city_list">
+									<div class="header_info-city-choose">
+										<span class="choosed_city">Казань</span>
+										<span class="choosed_city">Красноярск</span>
+										<span class="choosed_city">Томск</span>
+										<span class="choosed_city">Пенза</span>
+										<span class="choosed_city">Санкт-Петербург</span>
+										<span class="choosed_city">Тюмень</span>
+										<span class="choosed_city">Владивосток</span>
+										<span class="choosed_city">Новосибирск</span>
+										<span class="choosed_city">Бишкек</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bot">
+				<div class="search-wrap">
+					<button class="search_btn" id="search_btn"></button>
+					<div class="search_in" id="search_in">
+						<input type="text" class="search_txt">
+					</div>
+				</div>
+				<div class="tab_menu">
+					<ul class="tab_menu-list">
+						<li class="tab_item tab_item__active"><a href="#" class="tab_link">Перфораторы</a></li>
+						<li class="tab_item"><a href="#" class="tab_link">Дрели</a></li>
+						<li class="tab_item"><a href="#" class="tab_link">Шлифмашины</a></li>
+						<li class="tab_item"><a href="#" class="tab_link">Пистолеты</a></li>
+						<li class="tab_item"><a href="#" class="tab_link">Электропилы</a></li>
+						<li class="tab_item"><a href="#" class="tab_link">Наборы инструментов</a></li>
+						<li class="tab_item"><a href="#" class="tab_link">Аксессуары</a></li>
+						<li class="tab_item tab_link__sale"><a href="#" class="tab_link">Распродажа</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--======= ФОРМА  =========-->
+	<form action="#" class="form_modal" id="form_sign">
+		<div class="form-wrap">
+			<div class="form_item">
+				<span class="form_descr">enter your name</span>
+				<input class="form_input" type="text" placeholder="John" required>
+			</div>
+			<div class="form_item">
+				<span class="form_descr">enter your password</span>
+				<input class="form_input form_input__pass" type="password" placeholder="******" required>
+			</div>
+			<div class="form_item">
+				<span class="form_descr">repeat your password <i id="repeat-pass">Not correct!</i></span>
+				<input class="form_input form_input__pass" type="password" placeholder="******" required>
+			</div>
+			<div class="form_item">
+				<div class="btn-wrap">
+					<button class="form_btn head_btn--sign">sign up</button>
+				</div>
+			</div>
+			<span class="modal_close"></span>
+		</div>
+	</form>
+
+	<form action="#" class="form_modal" id="form_login">
+		<div class="form-wrap">
+			<div class="form_item">
+				<span class="form_descr">name</span>
+				<input class="form_input" type="text" placeholder="John" required>
+			</div>
+			<div class="form_item">
+				<span class="form_descr">password</span>
+				<input class="form_input" type="password" placeholder="******" required>
+			</div>
+			<div class="form_item">
+				<div class="btn-wrap">
+					<button class="form_btn head_btn--login">login</button>
+				</div>
+			</div>
+			<span class="modal_close"></span>
+		</div>
+	</form>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
